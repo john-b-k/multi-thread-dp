@@ -2,7 +2,14 @@ package com.multi.ch3;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
+/**
+ * 
+ * @author doyoon
+ *  - ReuqestQueue는 데이터 저장소(Shared Object로 배타제어 필요)
+ *  - ClientThread는 RequestQueue에 데이터 계속 저장
+ *  - ServerThread는 RequestQueue에 데이터 계속 조회 (데이터없으면 wait(blocking))
+ *
+ */
 public class GuardedSuspensionExam {
 	public static void main(String [] args){
 		RequestQueue queue = new RequestQueue();

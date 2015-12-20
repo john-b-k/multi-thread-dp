@@ -5,7 +5,7 @@ package com.multi.ch1;
  * 시나리오
  * - 사용자(UserThread)들이  Gate에 들어감
  * - Gate는 들어오는 사용자 이름, 주소를 확인해서 ,Data Sync확인
- *
+ * - Gate에는 1개의 사람만 통과가능
  */
 public class SingleThreadExecExam {
 	public static void main(String[] args){

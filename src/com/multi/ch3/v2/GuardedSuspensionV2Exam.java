@@ -3,6 +3,14 @@ package com.multi.ch3.v2;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+ * 
+ * @author doyoon
+ *  - ReuqestQueue는 데이터 저장소(Shared Object로 배타제어 필요)
+ *  - ClientThread는 RequestQueue에 데이터 계속 저장
+ *  - ServerThread는 RequestQueue에 데이터 계속 조회 (데이터없으면 wait(blocking))
+ *  - 배타제어를 concurruent 패키지 이용해서 간결히함
+ */
 public class GuardedSuspensionV2Exam {
 	public static void main(String [] args){
 		RequestQueueV2 queue = new RequestQueueV2();
