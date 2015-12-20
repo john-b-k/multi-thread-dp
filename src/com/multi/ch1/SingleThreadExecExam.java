@@ -1,5 +1,12 @@
 package com.multi.ch1;
-
+/**
+ * 
+ * @author doyoon
+ * 시나리오
+ * - 사용자(UserThread)들이  Gate에 들어감
+ * - Gate는 들어오는 사용자 이름, 주소를 확인해서 ,Data Sync확인
+ *
+ */
 public class SingleThreadExecExam {
 	public static void main(String[] args){
 		System.out.println("Testing Gate ...");
