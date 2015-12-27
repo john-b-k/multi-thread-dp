@@ -7,6 +7,8 @@ import java.util.concurrent.TimeoutException;
  * @author doyoon
  * Balking과 Guared Suspension중간
  * - 가드조건 만족할때까지 일정시간 기다림, 정해진 시간 지나도 가드조건 불만족이면  Balk함
+ * 
+ * - 이 예에서는 결국 doExecute()수행 안됨(Balk)
  */
 public class GuaredTimedExam {
 	public static void main(String args[]) throws Exception{
